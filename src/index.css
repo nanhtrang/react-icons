@@ -1,0 +1,76 @@
+:root {
+  --color-black: #172b4d;
+  --bg1: rgb(244, 245, 247);
+  --bg2: #eaecef;
+  --bg3: 233, 30, 99;
+  --bg4: #fbfbfb
+}
+
+* {
+  color: var(--color-black);
+}
+
+.sidebar-container {
+  padding-top: 32px;
+  width: 288px;
+  background-color: var(--bg1);
+  position: sticky;
+  height: 100vh;
+  overflow: auto;
+}
+
+.logo-svg {
+  animation: logo-rotate linear 5s infinite;
+}
+
+@keyframes logo-rotate {
+  to { transform: rotate(360deg); }
+}
+
+.logo-text {
+  font-size: 27.2px;
+  color: #e91e63;
+}
+
+.menu-item {
+  height: 47px;
+  border: 2px solid transparent;
+  border-radius: 6px;  
+}
+
+.search-box {
+  border: 2px solid #cbcdd4;
+  border-radius: 6px;
+  font-size: 19.2px;
+  padding: 8px 16px;
+  background-color: var(--bg2);
+}
+
+.search-box input {
+  border: none;
+  background-color: var(--bg2);
+}
+
+.search-box input:focus {
+  border: none;
+  outline: none;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.search-box:focus-within {
+  border-color: rgba(var(--bg3), .5);  
+}
+
+.menu-item:focus {
+  border-color: rgba(var(--bg3), .5) !important;  
+  background-color: rgba(var(--bg3), .05);
+}
+
+.content-container {
+  width: calc(100vw - 288px);
+  padding: 32px;
+  background-color: var(--bg4);
+}

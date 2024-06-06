@@ -1,11 +1,11 @@
 import Sidebar from "../components/Sidebar"
 
-function Layout({childrend}) {
+function Layout({children}) {
   return (
-    <div>
+    <div className="d-flex">
       <Sidebar/>
-      <div>
-        {childrend}
+      <div className="content-container">
+        {children}
       </div>
     </div>
   )
